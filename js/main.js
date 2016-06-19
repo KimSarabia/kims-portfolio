@@ -7,7 +7,8 @@ app.config(function($stateProvider, $urlRouterProvider){
   $stateProvider
     .state('home', {
       url:'/',
-      templateUrl: 'html/home.html'
+      templateUrl: 'html/home.html',
+      controller: 'homeCtrl'
     })
     .state('bio', {
       url:'/bio',
@@ -51,3 +52,17 @@ app.config(function($stateProvider, $urlRouterProvider){
     })
   $urlRouterProvider.otherwise('/');
 });
+
+app.controller('homeCtrl', function($scope, $state, $window, $rootScope) {
+   console.log('main controller!');
+   $rootScope.$on('$stateChangeStart', function() { $window.scrollTo(0,0) });
+});
+//$rootScope.$on('$stateChangeStart', function() { $window.scollTo(0,0) });
+
+// app.controller(function($scope, $state, $rootScope){
+//   $rootScope.$on("$routeChangeSuccess", function (event, currentRoute, previousRoute) {
+//
+//       window.scrollTo(0, 0);
+//
+//   });
+// })
