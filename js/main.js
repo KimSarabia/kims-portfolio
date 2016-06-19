@@ -54,15 +54,5 @@ app.config(function($stateProvider, $urlRouterProvider){
 });
 
 app.controller('homeCtrl', function($scope, $state, $window, $rootScope) {
-   console.log('main controller!');
    $rootScope.$on('$stateChangeStart', function() { $window.scrollTo(0,0) });
 });
-//$rootScope.$on('$stateChangeStart', function() { $window.scollTo(0,0) });
-
-// app.controller(function($scope, $state, $rootScope){
-//   $rootScope.$on("$routeChangeSuccess", function (event, currentRoute, previousRoute) {
-//
-//       window.scrollTo(0, 0);
-//
-//   });
-// })
