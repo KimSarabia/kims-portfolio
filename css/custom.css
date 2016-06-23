@@ -17,3 +17,15 @@
         opacity: .60;
         filter: alpha(opacity=60);
     }
+
+    a.link:hover {
+      text-decoration: underline;
+    }
+
+.portfolio_group.masonry-hover .portfolio-item .masonry-hover-wrapper .hover-desc.bg-light h3 a:hover {
+  color: #fff;
+}
+
+em, i:hover {
+     color: white;
+}
