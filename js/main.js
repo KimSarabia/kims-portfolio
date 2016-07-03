@@ -57,6 +57,11 @@ app.config(function($stateProvider, $urlRouterProvider){
   $urlRouterProvider.otherwise('/');
 });
 
-app.controller('homeCtrl', function($scope, $state, $window, $rootScope) {
+app.controller('homeCtrl', function($scope, $state, $window, $rootScope, $location) {
+  console.log('home works!');
    $rootScope.$on('$stateChangeStart', function() { $window.scrollTo(0,0) });
+
+   $scope.isActive = function(viewLocation) {
+        return viewLocation === $location.path();
+    };
 });

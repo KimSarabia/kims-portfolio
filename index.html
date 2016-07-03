@@ -36,29 +36,29 @@
                 <div class="one">
                     <div class="top_bar_left">
                         <div class="logo">
-                            <a id="logo" href="index.html" title="BeFreelancer - BeTheme"><img class="logo-main scale-with-grid" src="images/freelancer.png" alt="freelancer" /><img class="logo-mobile scale-with-grid" src="images/freelancer.png" alt="freelancer" />
+                            <a id="logo" href="index.html" title="Kim"><img class="logo-main scale-with-grid" src="images/freelancer.png" alt="freelancer" /><img class="logo-mobile scale-with-grid" src="images/freelancer.png" alt="freelancer" />
                             </a>
                         </div>
                         <div class="menu_wrapper">
                             <nav id="menu" class="menu-main-menu-container">
                                 <ul id="menu-main-menu" class="menu">
-                                    <li id="menu-item-6" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2 current_page_item">
+                                    <li id="menu-item-6" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2" ng-class="{ current_page_item: isActive('/home')}">
                                         <a ui-sref="home"><span>Home</span></a>
                                     </li>
-                                    <li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page">
+                                    <li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page" ng-class="{ current_page_item: isActive('/work')}">
                                         <a ui-sref="work"><span>Projects</span></a>
                                     </li>
-                                    <li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page">
+                                    <li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page" ng-class="{ current_page_item: isActive('/bio')}">
                                         <a ui-sref="bio"><span>About Me</span></a>
                                     </li>
-                                    <li id="menu-item-15" class="menu-item menu-item-type-post_type menu-item-object-page">
+                                    <li id="menu-item-15" class="menu-item menu-item-type-post_type menu-item-object-page " ng-class="{ current_page_item: isActive('/hire-me')}">
                                         <a ui-sref="hire-me"><span>Collaborate</span></a>
                                     </li>
-                                    <li id="menu-item-5" class="menu-item menu-item-type-custom menu-item-object-custom">
-                                        <a target="_blank" href="https://medium.com/@HiKimberlyJane"><span><span style="padding: 0; color: #4581FF;">Blog</span></span></a>
+                                    <li id="menu-item-15" class="menu-item menu-item-type-post_type menu-item-object-page">
+                                        <a href="https://medium.com/@HiKimberlyJane"><span>Blog</span></a>
                                     </li>
-                                    <li id="menu-item-5" class="menu-item menu-item-type-custom menu-item-object-custom">
-                                        <a target="_blank" href="https://kimsarabia.github.io/resume/"><span><span style="padding: 0; color: #4581FF;">Resume</span></span></a>
+                                    <li id="menu-item-15" class="menu-item menu-item-type-post_type menu-item-object-page">
+                                        <a href="https://drive.google.com/file/d/0Bzssr7lZv9tEbFRqbU1rMng5TzA/view?usp=sharing"><span>Resume</span></a>
                                     </li>
                                 </ul>
                             </nav><a class="responsive-menu-toggle " href="#"><i class="icon-menu"></i></a>
